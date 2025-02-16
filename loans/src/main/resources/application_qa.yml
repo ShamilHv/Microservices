@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to accounts QA APIs"
+  contactDetails:
+    name: "Shamil-QA"
+    email: "samilheyderovqa2003@gmail.com"
+  onCallSupport:
+    -(+994)-66-666-66-66
+    -(+994)-94-994-94-94

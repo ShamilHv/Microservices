@@ -1,0 +1,17 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+
+build:
+  version: "1.8"
+
+loans:
+  message: "Welcome to cards PROD APIs"
+  contactDetails:
+    name: "Shamil-Prod"
+    email: "samilheyderovprod2003@gmail.com"
+  onCallSupport:
+    -(+994)-44-444-44-44
+    -(+994)-22-222-22-22

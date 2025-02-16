@@ -14,3 +14,24 @@ spring:
         database-platform: org.hibernate.dialect.H2Dialect
         hibernate:
             ddl-auto: update
+    config:
+      import:
+        - "application_qa.yml"
+        - "application_prod.yml"
+    profiles:
+      active:
+        - "qa"
+
+
+build:
+  version: "3.0"
+
+
+cards:
+  message: "Welcome to microservices bank app"
+  contactDetails:
+    name: "Shamil"
+    email: "samilheyderov2003@gmail.com"
+  onCallSupport:
+    -(+994)-55-555-55-55
+    -(+994)-77-777-77-77

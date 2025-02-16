@@ -1,0 +1,40 @@
+services:
+  accounts:
+    image: "shamilhv/accounts:v1"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - shamil
+
+  loans:
+    image: "shamilhv/loans:v1"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - shamil
+
+  cards:
+    image: "shamilhv/cards:v1"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+      - shamil
+
+networks:
+  shamil:
+    driver: "bridge"
